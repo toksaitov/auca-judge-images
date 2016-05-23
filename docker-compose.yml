@@ -1,10 +1,10 @@
 version: "2"
 
 services:
-  auca-judge-c-build:
-    build: "./auca-judge-c-build"
-    image: "toksaitov/images:auca-judge-c-build"
+  c-build:
+    build: "./c-build"
+    image: "toksaitov/auca-judge-images:c-build"
 
-  auca-judge-c-test:
-    build: "./auca-judge-c-test"
-    image: "toksaitov/images:auca-judge-c-test"
+  c-test:
+    build: "./c-test"
+    image: "toksaitov/auca-judge-images:c-test"

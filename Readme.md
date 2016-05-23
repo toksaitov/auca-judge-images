@@ -2,10 +2,28 @@ auca-judge-images
 =================
 
 *auca-judge-images* is a repository of build and test images for different
-programming languages and environments for use by the *auca-judge* system.
+programming languages and environments for use by the
+[auca-judge](https://github.com/toksaitov/auca-judge) system.
 
 All images use [auca-judge-agent](https://github.com/toksaitov/auca-judge-agent)
-to control build and test tasks remotely.
+to allow the control of build and test tasks inside containers remotely.
+
+# Services
+
+*auca-judge-images* is part of the [auca-judge](https://github.com/toksaitov/auca-judge)
+system to test code submissions to help to conduct laboratory classes or
+programming contests at [AUCA](https://auca.kg).
+
+* UI front
+  * [auca-judge-front](https://github.com/toksaitov/auca-judge-front)
+* Queue service
+  * [auca-judge-queue](https://github.com/toksaitov/auca-judge-queue)
+* Task runner
+  * [auca-judge-back](https://github.com/toksaitov/auca-judge-back)
+* Container's control and communication endpoint
+  * [auca-judge-agent](https://github.com/toksaitov/auca-judge-agent)
+* Images for various programming languages and environments
+  * [auca-judge-images](https://github.com/toksaitov/auca-judge-images)
 
 ## Prerequisites
 
@@ -13,17 +31,11 @@ to control build and test tasks remotely.
 
 ## Usage
 
-First, you need to build [auca-judge-agent](https://github.com/toksaitov/auca-judge-agent)
-under the tag `toksaitov/images:auca-judge-agent`.
+* `docker-compose build` to build all images
 
-```bash
-git clone https://github.com/toksaitov/auca-judge-agent.git
-cd auca-judge-agent
+## Docker Hub
 
-docker build --tag="toksaitov/images:auca-judge-agent" .
-```
-
-Then, execute `docker-compose build` to build all local images.
+* [toksaitov/auca-judge-images](https://hub.docker.com/r/toksaitov/auca-judge-images)
 
 ## Licensing
 

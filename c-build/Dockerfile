@@ -1,6 +1,6 @@
 # Use the `auca-judge-agent` image as a base image.
 
-FROM toksaitov/images:auca-judge-agent
+FROM toksaitov/auca-judge-agent
 
 # Install the GNU C Compiler.
 
